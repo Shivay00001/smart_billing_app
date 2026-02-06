@@ -1,0 +1,2 @@
+App triggered at C:\Users\shiva\.gemini\antigravity\scratch\smart_billing_app
+Executable: C:\Program Files\Python312\python.exe
