@@ -1,50 +1,20 @@
 # Smart Billing App
 
-An enterprise-grade solution engineered for high performance.
+**Desktop GUI app (tkinter)** — offline billing/invoicing app with local SQLite database. Product management, billing screen, reports, analytics, printing/export.
 
-![Language](https://img.shields.io/badge/Language-Python-blue)
-![Status](https://img.shields.io/badge/Status-Active-success)
-![License](https://img.shields.io/badge/License-MIT-green)
+## Run
 
-## 🚀 Overview
+```bash
+python main.py          # launches the desktop GUI window
+```
 
-Welcome to the **Smart Billing App** repository. This project is built to deliver a robust and scalable solution tailored to modern development standards.
+Needs a display (works under `xvfb-run` on headless Linux).
 
-## ✨ Features
+## Deps
 
-- **High Performance:** Optimized for speed and efficiency.
-- **Scalable Architecture:** Designed to grow with your needs.
-- **Clean Codebase:** Follows best practices and industry standards.
-- **Secure by Default:** Engineered with security in mind.
+Standard library + tkinter only. Boot verified under `xvfb-run` on Python 3.12: database initializes, main window opens, no traceback.
 
-## 🛠️ Prerequisites
+## Notes
 
-Ensure you have the following installed in your environment before proceeding:
-- Appropriate runtime/compiler for `Python`
-- Standard development tools
-
-## 📦 Installation
-
-Follow standard installation steps for `Python` to set up the project locally:
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Shivay00001/smart_billing_app.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd smart_billing_app
-   ```
-3. Install dependencies according to the standard `Python` ecosystem.
-
-## 💻 Usage
-
-Run the project using standard execution commands for `Python`. Ensure all environment variables and configurations are set prior to execution.
-
-## 🤝 Contributing
-
-Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-## 📝 License
-
-This project is licensed under standard terms.
+- Data is stored in a local SQLite file created next to the app (`startup_debug.txt` logs each boot).
+- Not a web/cloud app — runs as a local desktop window.
