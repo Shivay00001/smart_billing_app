@@ -1,5 +1,7 @@
 # Smart Billing App
 
+Built by [VisionQuantech](https://visionquantech.com) — AI agents, apps & tools for small businesses.
+
 **Desktop GUI app (tkinter)** — offline billing/invoicing app with local SQLite database. Product management, billing screen, reports, analytics, printing/export.
 
 ## Run
